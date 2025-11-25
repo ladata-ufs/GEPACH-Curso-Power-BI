@@ -1,0 +1,45 @@
+Funções de Agregação e Iteração
+
+Estas funções realizam cálculos matemáticos nos dados. As que terminam em "X" são iteradoras (calculam linha por linha antes de agregar).
+
+    SUM: Calcula o total da soma de todos os números em uma coluna específica.
+
+    SUMX: Percorre uma tabela linha por linha para avaliar uma expressão e, ao final, soma todos os resultados.
+
+    AVERAGE: Retorna a média aritmética (soma dividida pela contagem) dos números em uma coluna.
+
+    AVERAGEX: Percorre uma tabela linha por linha para avaliar uma expressão e retorna a média aritmética dos resultados.
+
+Funções de Filtro e Contexto
+
+Essenciais para manipular quais dados estão sendo considerados no cálculo.
+
+    CALCULATE: Avalia uma expressão em um contexto de filtro modificado. É considerada a função mais importante do DAX por permitir alterar como os dados são filtrados.
+
+    FILTER: Retorna uma tabela que representa um subconjunto de outra tabela ou expressão, baseada em uma condição definida.
+
+    KEEPFILTERS: Modifica o comportamento da função CALCULATE para que os novos filtros sejam aplicados em conjunto (interseção) com os filtros existentes, em vez de substituí-los.
+
+Funções de Contagem
+
+Utilizadas para contar a ocorrência de dados.
+
+    COUNT: Conta o número de células em uma coluna que contêm números.
+
+    COUNTROWS: Conta o número total de linhas em uma tabela especificada ou em uma tabela definida por uma expressão.
+
+    DISTINCTCOUNT: Conta o número de valores distintos (únicos) em uma coluna.
+
+    COUNTBLANK: Conta o número de células vazias (em branco) em uma coluna.
+
+Funções de Data e Tempo (Inteligência de Tempo)
+
+Usadas para criar tabelas de calendário ou manipular datas.
+
+    DATEDIFF: Retorna a diferença entre duas datas, expressa na unidade escolhida (como dias, meses ou anos).
+
+    CALENDAR: Retorna uma tabela com uma única coluna de datas contíguas, baseada em uma data de início e uma data de fim fornecidas manualmente.
+
+    CALENDARAUTO: Retorna automaticamente uma tabela com uma única coluna de datas, calculada com base nas datas mínima e máxima existentes no modelo de dados.
+
+    NETWORKDAYS: Retorna o número de dias úteis inteiros entre duas datas, permitindo especificar quais dias são fins de semana e feriados.
